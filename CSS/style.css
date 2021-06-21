@@ -1,0 +1,217 @@
+
+:root{
+--page-color: #FFFFFF;
+--cont-alfa-color: rgba(255, 255, 255, 0.6);
+--logo-color: #000000;
+--grand-color: #212121;
+--indent-color: #757575;
+--style-color: #2196F3;
+--button-hower-color: #188CE8;
+--section-color: #F5F4FA;
+
+--main-font: 'Roboto', sans-serif;
+--another-font: 'Raleway', sans-serif;
+}
+
+body{
+    color: var(--grand-color);
+    background-color: var(--page-color);
+    font-family: var(--main-font);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+.link{
+    text-decoration: none;
+}
+
+.list{
+    list-style: none;
+}
+
+/*-- Стилі Хедера --*/
+
+.logo{
+    color: var(--style-color);
+    font-family: var(--another-font);
+    font-size: 26px;
+    line-height: 1.2;
+   
+}
+
+.logo-accent-hat{
+    color: var(--logo-color);
+}
+
+.menu-link{
+    color:inherit;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.menu-link.select,
+.filter-button.current {
+    color: var(--style-color);
+}
+
+.hat .contact-list-link {
+    color: var(--indent-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+
+/* Стилі секції Хіро */
+
+.hero{
+    background-color: #2F303A
+}
+
+.hero-title{
+    color: var(--page-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.hero-button{
+    color: var(--page-color);
+    background-color: var(--style-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color:var(--button-hower-color);
+
+}
+
+
+/* Стилі секції Особливості */
+
+.feature-item-title {
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.paragraph{
+    color: var(--indent-color);
+    line-height: 1.71;
+}
+
+
+
+/* Стилі секції Приклади робіт і секції Команда */
+
+.team{
+    background-color: var(--section-color);
+}
+
+.section-title{
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+
+.card{
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+}
+
+.team-member {
+    font-weight: 500;
+}
+
+.prof{
+    color: var(--indent-color); 
+}
+
+
+
+/* Стилі Портфоліо */
+
+.filter-button{
+    color: inherit;
+    background-color: var(--section-color);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: inherit;
+    cursor: pointer;
+}
+
+.filter-button:hover,
+.filter-button:focus{
+    color: var(--page-color);
+    background-color: var(--style-color);
+}
+
+
+.port-head{
+    color: var(--grand-color);
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+}
+
+.port-disc{
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--indent-color);
+}
+
+.port-head:hover,
+.port-head:focus,
+.port-disc:hover,
+.port-disc:focus {
+    color:var(--style-color);
+}
+
+
+/* Стилі футера */
+
+
+.lowerPart{
+    background-color: #2F303A;
+}
+
+.logo-accent-footer{
+    color: var(--page-color);
+}
+
+address{
+    font-style: normal;
+}
+
+
+.add{
+    color: var(--page-color);
+    line-height: 1.71;
+}
+
+.contact-list .contact-list-link {
+    color:var(--cont-alfa-color);
+    line-height: 1.71;
+}
+
+.menu-item:hover,
+.menu-item:focus,
+.contact-list-link:hover,
+.contact-list-link:focus {
+    color: var(--style-color)
+}
