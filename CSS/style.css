@@ -21,29 +21,82 @@ body{
     letter-spacing: 0.03em;
 }
 
+.conteiner{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    /* outline: 2px solid red; */
+}
+
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .link{
     text-decoration: none;
 }
 
 .list{
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
+h1, h2, h3, h4, h5, h6, p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+
 /*-- Стилі Хедера --*/
+
+.hat{
+    border-bottom: 1px solid #ECECEC;
+    
+}
+
+.conteiner.header{
+    display: flex;
+    align-items: center;
+    /* background-color: salmon; */
+}
+
+.hat-nav{
+    display: flex;
+    align-items: center;
+}
+
+
 
 .logo{
     color: var(--style-color);
     font-family: var(--another-font);
     font-size: 26px;
     line-height: 1.2;
-   
 }
 
 .logo-accent-hat{
     color: var(--logo-color);
 }
 
+.menu{
+    display: flex;
+    margin-left: 93px;
+}
+
+.menu-item:not(:last-child){
+    margin-right: 50px;
+}
+
 .menu-link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color:inherit;
     font-weight: 500;
     line-height: 1.14;
@@ -55,7 +108,19 @@ body{
     color: var(--style-color);
 }
 
+.hat-list{
+    display: flex;
+    margin-left: auto;
+}
+
+.hat-list-item:not(:last-child){
+    margin-right: 50px;
+}
+
 .hat .contact-list-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--indent-color);
     font-weight: 500;
     line-height: 1.14;
@@ -66,28 +131,37 @@ body{
 /* Стилі секції Хіро */
 
 .hero{
-    background-color: #2F303A
+    
+    text-align: center;
+    background-color: #2F303A;
 }
 
 .hero-title{
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+
     color: var(--page-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
 
 .hero-button{
+    padding: 10px 32px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    
+
     color: var(--page-color);
     background-color: var(--style-color);
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
 }
@@ -101,7 +175,17 @@ body{
 
 /* Стилі секції Особливості */
 
+.feature-list{
+    display: flex;
+}
+
+.feature-item:not(:last-child){
+    margin-right: 30px;
+}
+
 .feature-item-title {
+    margin-bottom: 10px;
+
     line-height: 1.14;
     text-transform: uppercase;
 }
@@ -112,18 +196,40 @@ body{
 }
 
 
+/* Стилі секції Приклади робіт */
 
-/* Стилі секції Приклади робіт і секції Команда */
+.example-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Стилі секції Команда */
 
 .team{
     background-color: var(--section-color);
 }
 
 .section-title{
+    margin-bottom: 50px;
+
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
 }
+
+.team-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-list-item{
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
 
 .card{
     font-size: 16px;
@@ -132,10 +238,15 @@ body{
 }
 
 .team-member {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
     font-weight: 500;
 }
 
 .prof{
+    margin-bottom: 30px;
+
     color: var(--indent-color); 
 }
 
@@ -187,6 +298,9 @@ body{
 
 
 .lowerPart{
+    padding-top: 60px;
+    padding-bottom: 60px;
+
     background-color: #2F303A;
 }
 
@@ -194,14 +308,22 @@ body{
     color: var(--page-color);
 }
 
-address{
+.contacts{
+    margin-top: 20px;
+
     font-style: normal;
 }
 
 
 .add{
+    margin-bottom: 9px;
+
     color: var(--page-color);
     line-height: 1.71;
+}
+
+.contact-list-item:not(:last-child){
+    margin-bottom: 9px;
 }
 
 .contact-list .contact-list-link {
