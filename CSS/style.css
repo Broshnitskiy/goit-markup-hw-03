@@ -40,14 +40,20 @@ body{
 }
 
 .list{
-    margin: 0;
-    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
     list-style: none;
 }
 
 h1, h2, h3, h4, h5, h6, p{
     margin-top: 0;
     margin-bottom: 0;
+}
+
+img{
+    display: block;
+    max-width: 100%;
 }
 
 
@@ -77,6 +83,7 @@ h1, h2, h3, h4, h5, h6, p{
     font-family: var(--another-font);
     font-size: 26px;
     line-height: 1.2;
+    letter-spacing: 0.03em;
 }
 
 .logo-accent-hat{
@@ -177,11 +184,18 @@ h1, h2, h3, h4, h5, h6, p{
 
 .feature-list{
     display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+    /* background-color: salmon; */
 }
 
-.feature-item:not(:last-child){
-    margin-right: 30px;
+.feature-item{
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 120px) / 4);
 }
+
 
 .feature-item-title {
     margin-bottom: 10px;
@@ -200,8 +214,17 @@ h1, h2, h3, h4, h5, h6, p{
 
 .example-list{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
 }
+
+.example-list-item{
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc(100% / 3 - 30px);
+}
+
 
 
 /* Стилі секції Команда */
@@ -216,14 +239,21 @@ h1, h2, h3, h4, h5, h6, p{
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
+    letter-spacing: 0.03em;
 }
 
 .team-list{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
 }
 
 .team-list-item{
+    flex-basis: calc(100% / 4 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -233,18 +263,19 @@ h1, h2, h3, h4, h5, h6, p{
 
 .card{
     font-size: 16px;
-    line-height: 1.18;
+    line-height: 1.1875;
+    letter-spacing: 0.03em;
     text-align: center;
 }
 
 .team-member {
     margin-top: 30px;
-    margin-bottom: 10px;
 
     font-weight: 500;
 }
 
 .prof{
+    margin-top: 10px;
     margin-bottom: 30px;
 
     color: var(--indent-color); 
@@ -254,35 +285,87 @@ h1, h2, h3, h4, h5, h6, p{
 
 /* Стилі Портфоліо */
 
+
+.filter-list{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.filter-item:not(:last-child) {
+    margin-right: 8px;
+}
+
 .filter-button{
+    border: none;
+    
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+
     color: inherit;
     background-color: var(--section-color);
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
+    letter-spacing: 0.03em;
     text-align: center;
-    letter-spacing: inherit;
     cursor: pointer;
 }
 
+
+
 .filter-button:hover,
 .filter-button:focus{
+    
+    border-radius: 4px;
     color: var(--page-color);
     background-color: var(--style-color);
+   
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+    
 }
 
 
+.port-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
+
+.port-item{
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc(100% / 3 - 30px);
+
+    border: 1px solid #EEEEEE;
+
+}
+
+.port-title{
+    padding: 20px 24px;
+}
+
 .port-head{
+    margin-bottom: 4px;
+
     color: var(--grand-color);
     font-size: 18px;
     line-height: 2.0;
     letter-spacing: 0.06em;
+    
 }
 
 .port-disc{
     font-size: 16px;
     line-height: 1.87;
+    letter-spacing: 0.03em;
     color: var(--indent-color);
 }
 
