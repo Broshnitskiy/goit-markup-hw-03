@@ -110,8 +110,7 @@ img{
     letter-spacing: 0.02em;
 }
 
-.menu-link.select,
-.filter-button.current {
+.menu-link.select {
     color: var(--style-color);
 }
 
@@ -213,14 +212,18 @@ img{
 
 /* Стилі секції Приклади робіт */
 
-.example-list{
+.examples{
+padding-bottom: 94px;
+}
+
+.examples-list{
     display: flex;
     flex-wrap: wrap;
     margin-top: -30px;
     margin-left: -30px;
 }
 
-.example-list-item{
+.examples-list-item{
     margin-top: 30px;
     margin-left: 30px;
     flex-basis: calc(100% / 3 - 30px);
@@ -262,6 +265,12 @@ img{
 }
 
 
+.card-name{
+    padding-top: 30px;
+    padding-bottom: 30px;   
+}
+
+
 .card{
     font-size: 16px;
     line-height: 1.1875;
@@ -270,15 +279,11 @@ img{
 }
 
 .team-member {
-    margin-top: 30px;
-
+    margin-bottom: 10px;
     font-weight: 500;
 }
 
 .prof{
-    margin-top: 10px;
-    margin-bottom: 30px;
-
     color: var(--indent-color); 
 }
 
@@ -371,13 +376,6 @@ img{
     color: var(--indent-color);
 }
 
-.port-head:hover,
-.port-head:focus,
-.port-disc:hover,
-.port-disc:focus {
-    color:var(--style-color);
-}
-
 
 /* Стилі футера */
 
@@ -389,20 +387,24 @@ img{
     background-color: #2F303A;
 }
 
+.lowerPart .logo {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+
 .logo-accent-footer{
     color: var(--page-color);
 }
 
-.contacts{
-    margin-top: 20px;
-
+.contacts{    
     font-style: normal;
 }
 
 
 .add{
     margin-bottom: 9px;
-
+    
     color: var(--page-color);
     line-height: 1.71;
 }
@@ -413,7 +415,7 @@ img{
 
 .contact-list .contact-list-link {
     color:var(--cont-alfa-color);
-    line-height: 1.71;
+    line-height: 1.71;    
 }
 
 .menu-item:hover,
